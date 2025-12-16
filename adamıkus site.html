@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Adamikus Bilgi Merkezi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌐 Adamikus Bilgi Merkezi</h1>
+  <p>Araçlar • Blog • Canlı Bilgiler</p>
+</header>
+
+<nav>
+  <button onclick="ac('yas')">Yaş</button>
+  <button onclick="ac('not')">Not</button>
+  <button onclick="ac('hava')">Hava</button>
+  <button onclick="ac('soru')">Soru Sor</button>
+</nav>
+
+<section id="yas" class="panel">
+  <h2>🎂 Yaş Hesaplama</h2>
+  <input id="yil" type="number" placeholder="Doğum yılı">
+  <button onclick="yasHesapla()">Hesapla</button>
+  <p id="yasSonuc"></p>
+</section>
+
+<section id="not" class="panel">
+  <h2>📚 Not Ortalaması</h2>
+  <input id="n1" type="number" placeholder="Not 1">
+  <input id="n2" type="number" placeholder="Not 2">
+  <input id="n3" type="number" placeholder="Not 3">
+  <button onclick="notHesapla()">Hesapla</button>
+  <p id="notSonuc"></p>
+</section>
+
+<section id="hava" class="panel">
+  <h2>☁️ Canlı Hava Durumu</h2>
+  <input id="sehir" placeholder="Şehir (İstanbul)">
+  <button onclick="havaGetir()">Göster</button>
+  <p id="havaSonuc"></p>
+</section>
+
+<section id="soru" class="panel">
+  <h2>❓ Soru Sor</h2>
+  <input id="isim" placeholder="Adın">
+  <textarea id="mesaj" placeholder="Sorunu buraya yaz"></textarea>
+  <button onclick="soruGonder()">Gönder</button>
+  <div id="sorular"></div>
+</section>
+
+<footer>
+© 2025 Adamikus
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
